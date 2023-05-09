@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="navbar fixed top-0 left-0 w-screen text-primary bg-white">
+    <header className="navbar fixed top-0 left-0 w-screen text-primary bg-white z-50">
   <h1 className="navbar-start">
     <Link to="/" className="btn btn-ghost normal-case text-xl"><a>JT</a></Link>
   </h1>

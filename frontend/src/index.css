@@ -13,3 +13,7 @@ h1 {
     font-family: 'Bruno Ace SC', cursive;
     color: #ac4800;
 }
+
+.stair-effect>article:nth-child(odd) {
+    margin-top: 6rem;
+}
