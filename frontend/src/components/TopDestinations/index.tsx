@@ -1,6 +1,7 @@
 import React from "react";
 import Destination from "../Destination";
 import { DestinationTypes } from "../../Types";
+import Heading from "../Heading";
 
 const destinations: DestinationTypes[] = [
   {
@@ -36,7 +37,7 @@ const destinations: DestinationTypes[] = [
 const TopDestinations = () => {
   return (
     <section className="relative -top-36">
-      <h1 className="heading w-fit">Top Destinations</h1>
+      <Heading text="Top Destinations" />
       <section className="flex stair-effect justify-evenly items-start flex-wrap p-2 gap-4">
         {
           destinations.map(destination => <Destination destination={destination} />)
