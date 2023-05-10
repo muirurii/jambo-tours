@@ -10,10 +10,27 @@ body {
 }
 
 h1 {
-    font-family: 'Bruno Ace SC', cursive;
-    color: #ac4800;
+    font-family: 'Rajdhani', sans-serif;
+    /* color: #ac4800; */
 }
 
-.stair-effect>article:nth-child(odd) {
-    margin-top: 6rem;
+.stair-effect>section:nth-child(even) {
+    margin-top: 4rem;
+}
+
+.heading {
+    position: relative;
+    @apply text-xl;
+    @apply p-2;
+    @apply mb-2;
+}
+
+.heading::after {
+    position: absolute;
+    content: "";
+    @apply -bottom-0;
+    @apply -left-4;
+    height: 1px;
+    width: calc(50% + 1rem);
+    @apply bg-accent;
 }

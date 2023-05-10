@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import HomePage from "./components/Pages/Home";
 function App() {
   return (
-    <div className="bg-white">
+    <div className="bg-white text-primary overflow-x-hidden">
       <BrowserRouter>
         <Header />
         <Routes>

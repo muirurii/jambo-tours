@@ -7,9 +7,12 @@ module.exports = {
         extend: {
             colors: {
                 primary: "#000",
-                secondary: "#F6E05E",
-                // accent: " #48BB78",
+                secondary: "#8BC34A",
+                accent: "#FBC02D",
             },
+            fontFamily: {
+                secondary: "'Rajdhani', sans-serif"
+            }
         },
     },
     plugins: [require("daisyui")],

@@ -1,6 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
-let interval: any;
 
 const Hero = () => {
   const imgWidth: number = window.innerWidth;
@@ -11,56 +10,61 @@ const Hero = () => {
   ];
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
+  const intervalRef = useRef<NodeJS.Timer>();
+
   useEffect(() => {
-    changePictures();
+    clearInterval(intervalRef.current);
   },[]);
+  
+  // intervalRef.current = setInterval(()=>{
+  //   clearInterval(intervalRef.current);
 
+  //     if(currentIndex === 2){
+  //       setCurrentIndex(0)
+  //     }else{
+  //       setCurrentIndex(current => current + 1);
+  //     }
+  // },8000)
+    
 
-  const changePictures = ()=>{
-    clearInterval(interval);
-   interval = setInterval(() => {
-        console.log("first", currentIndex)
-      if (currentIndex === 2) {
-        setCurrentIndex(0);
-      }else {
-          setCurrentIndex(2);
-      }
-    }, 8000);
-  }
 
   return (
-    <section className="h-screen w-screen relative -z-10">
+    <section className="h-screen w-screen relative">
       <img
         className={`w-full h-full absolute top-0 left-0 object-cover transition-opacity duration-[4s] ease-in-out ${
-          currentIndex === 0 ? "opacity-100" : "opacity-0"
+          currentIndex === 0 ? null : "opacity-0"
         }`}
         src={`https://images.pexels.com/photos/${images[0]}?auto=compress&cs=tinysrgb&w=${imgWidth}`}
         alt="HERO IMAGES"
       />
       <img
         className={`w-full h-full absolute top-0 left-0 object-cover transition-opacity duration-[4s] ease-in-out ${
-          currentIndex === 1 ? "opacity-100" : "opacity-0"
+          currentIndex === 1 ? null : "opacity-0"
         }`}
         src={`https://images.pexels.com/photos/${images[1]}?auto=compress&cs=tinysrgb&w=${imgWidth}`}
         alt="HERO IMAGES"
       />
       <img
         className={`w-full h-full absolute top-0 left-0 object-cover transition-opacity duration-[4s] ease-in-out ${
-          currentIndex === 2 ? "opacity-100" : "opacity-0"
+          currentIndex === 2 ? null : "opacity-0"
         }`}
         src={`https://images.pexels.com/photos/${images[2]}?auto=compress&cs=tinysrgb&w=${imgWidth}`}
         alt="HERO IMAGES"
       />
       <section className="w-full h-full flex items-center justify-center relative z-10">
-        <h1 className="text-5xl text-center">
-          Discover the best
+        <article className="text-c">
+         <h1 className="text-6xl">
+          Discover Kenya's <span className="pl-2 text-accent">Magic</span>
           <br />
-          <span className="pl-2 text-secondary">Safari</span>
-          <br />
-          Experiences
+          with Jambo Tours
         </h1>
+          <p className="italic text-accent">Your Gateway to Adventure and Exploration</p>
+        </article>
+
       </section>
-      <div className="absolute top-0 left-0 h-full w-full bg-[#499a2c55]"></div>
+      <div className="absolute top-0 left-0 h-full w-full
+      bg-gradient-to-t from-secondary via-[#00000053] to-[#0000]
+      "></div>
     </section>
   );
 };
