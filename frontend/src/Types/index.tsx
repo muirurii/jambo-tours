@@ -5,3 +5,11 @@ export interface DestinationTypes {
     description: string;
     image:string;
 }
+
+export interface TestimonialTypes {
+    name: string;
+    occupation: string;
+    rating: number;
+    message: string;
+}
+

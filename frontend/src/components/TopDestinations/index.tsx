@@ -40,7 +40,7 @@ const TopDestinations = () => {
       <Heading text="Top Destinations" />
       <section className="flex stair-effect justify-evenly items-start flex-wrap p-2 gap-4">
         {
-          destinations.map(destination => <Destination destination={destination} />)
+          destinations.map(destination => <Destination destination={destination} key={destination.description} />)
         }
       </section>
     </section>

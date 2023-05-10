@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "react-plain-slider": "^0.0.3",
+    "react-responsive-carousel": "^3.2.23"
+  }
+}
