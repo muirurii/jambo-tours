@@ -4,7 +4,7 @@ import { DestinationTypes } from "../../Types"
 const Destination = ({destination}: {destination: DestinationTypes}) => {
   return (
     <section className="w-64 h-80 rounded-lg overflow-hidden relative
-    group transition-colors duration-300 delay-300 hover:border-t-4 hover:border-accent
+    group transition-colors duration-300 delay-300 hover:border-t-4 hover:border-x hover:border-accent
     ">
         <img
         className="w-full h-full object-cover"
@@ -17,7 +17,7 @@ const Destination = ({destination}: {destination: DestinationTypes}) => {
           <h3 className ="font-secondary text-accent">{destination.destination}</h3>
           <div className="flex items-center justify-start gap-x-2 mb-2">
             <BiMap />
-            <p>{destination.location}</p>
+            <p className="text-xs">{destination.location}</p>
           </div>
           <p className="text-xs hidden group-hover:block mb-2">{destination.description}</p>
           <div className="justify-self-end flex items-center justify-end gap-x-2 pr-1">
