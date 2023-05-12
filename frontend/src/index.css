@@ -15,6 +15,10 @@
     }
 }
 
+.banner {
+    clip-path: polygon(0 68%, 0 85%, 19% 100%, 85% 100%, 100% 85%, 100% 0, 0 0);
+}
+
 .stair-effect>section:nth-child(even) {
     margin-top: 2rem;
 }
