@@ -1,3 +1,4 @@
+import Banner from "../../Banner"
 import Hero from "../../Hero"
 import Testimonials from "../../Testimonials"
 import TopDestinations from "../../TopDestinations"
@@ -10,6 +11,8 @@ const HomePage = () => {
         <TopDestinations />
         <WelcomeSection />
         <Testimonials />
+        <Banner />
+
     </main>
   )
 }

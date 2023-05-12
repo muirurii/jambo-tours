@@ -1,17 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body {
-    margin: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    /* font-family: 'Poiret One', cursive; */
-    font-family: 'Poppins', sans-serif;
-}
-
-h1 {
-    font-family: 'Rajdhani', sans-serif;
-    /* color: #ac4800; */
+@layer base {
+    body {
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        /* font-family: 'Poiret One', cursive; */
+        font-family: 'Poppins', sans-serif;
+    }
+    h1 {
+        font-family: 'Rajdhani', sans-serif;
+        /* color: #ac4800; */
+    }
 }
 
 .stair-effect>section:nth-child(even) {
