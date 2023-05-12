@@ -36,9 +36,9 @@ const destinations: DestinationTypes[] = [
 
 const TopDestinations = () => {
   return (
-    <section className="relative -top-36">
+    <section className="relative -top-36 ">
       <Heading text="Top Destinations" />
-      <section className="flex stair-effect justify-evenly items-start flex-wrap p-2 gap-4">
+      <section className="flex stair-effect justify-evenly items-start flex-wrap p-2 gap-4 py-8">
         {
           destinations.map(destination => <Destination destination={destination} key={destination.description} />)
         }

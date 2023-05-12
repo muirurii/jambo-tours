@@ -15,14 +15,11 @@ h1 {
 }
 
 .stair-effect>section:nth-child(even) {
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .heading {
-    position: relative;
-    @apply text-xl;
-    @apply p-2;
-    @apply mb-2;
+    /* position: relative; */
 }
 
 .heading::after {

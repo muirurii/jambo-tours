@@ -13,7 +13,7 @@ const Destination = ({destination}: {destination: DestinationTypes}) => {
 
         <article className="absolute bottom-0 pl-2 pb-8 cursor-pointer transition-all duration-300 group-hover:h-full
         w-full h-32 z-20 rounded-bl-sm flex flex-col justify-end
-        bg-gradient-to-t from-secondary to-[#06060670]">
+        bg-gradient-to-t from-secondary to-[#0606069c]">
           <h3 className ="font-secondary text-accent">{destination.destination}</h3>
           <div className="flex items-center justify-start gap-x-2 mb-2">
             <BiMap />

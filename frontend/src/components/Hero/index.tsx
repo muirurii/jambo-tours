@@ -2,7 +2,6 @@ import { Carousel } from "react-responsive-carousel";
 import HeroImage from "../HeroImage";
 
 const Hero = () => {
-  const imgWidth: number = window.innerWidth;
   const images: number[] = [2862070, 3992516, 13033072];
 
   return (
@@ -14,10 +13,11 @@ const Hero = () => {
         infiniteLoop={true}
         showThumbs={false}
         showArrows={false}
+        showStatus={false}
         className="absolute top-0 left-0 w-screen h-screen"
       >
         {images.map((image) => (
-          <HeroImage imgId={image} />
+          <HeroImage key={image} imgId={image} />
         ))}
       </Carousel>
       <section className="w-full h-full flex items-center justify-center relative z-10">
