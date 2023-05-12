@@ -19,10 +19,10 @@ const testimonials: TestimonialTypes[] = [
   {
     name: "Michael Williams",
     occupation: "Business Owner",
-    rating: 4,
+    rating: 4.5,
     message: `My family and I had a fantastic time exploring Kenya with Jambo Tours.
               Our guide was friendly and informative, and we saw so much wildlife on our safari in
-              Lake Nakuru National Park. The only reason I'm giving them 4 stars instead of 5 is that
+              Lake Nakuru National Park. The only reason I'm giving them 4.5 stars instead of 5 is that
               we had some minor issues with our accommodations. However, the team at Jambo Tours was quick
               to address our concerns and make things right. Overall, I would definitely recommend them.`,
   },
@@ -57,7 +57,7 @@ const testimonials: TestimonialTypes[] = [
   {
     name: "Maria Rodriguez",
     occupation: "Student",
-    rating: 4,
+    rating: 4.5,
     message: `I had a great time on the Hell's Gate biking and hiking tour with Jambo Tours.
               The scenery was beautiful, and our guide was fun and engaging.
               The only issue we had was that the tour was a bit rushed, and we didn't have as much

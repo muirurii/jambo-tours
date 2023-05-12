@@ -6,7 +6,7 @@ const WelcomeSection = () => {
       <Heading text="Welcome To Jambo Tours" />
       <section className="flex items-center justify-evenly py-8">
         <article className="max-w-md">
-          <p>
+          <p className="mb-2">
             Welcome to Jambo Tours, your trusted guide to the best adventures
             and experiences in Kenya. With our passion for travel and commitment
             to excellence, we're here to help you create unforgettable memories

@@ -1,5 +1,6 @@
 import React from "react";
 import { TestimonialTypes } from "../../Types";
+import RateCard from "../RateCard";
 
 const Testimonial = ({ testimonial }: { testimonial: TestimonialTypes }) => {
   return (
@@ -15,6 +16,7 @@ const Testimonial = ({ testimonial }: { testimonial: TestimonialTypes }) => {
           <p className="text-xs italic font-secondary py-2">{testimonial.message}</p>
           <label className="text-accent block mb-1">~{testimonial.name}</label>
           <label className="text-xs">{testimonial.occupation}</label>
+          <RateCard rating={testimonial.rating} />
         </article>
       </section>
     </section>
