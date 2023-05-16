@@ -11,7 +11,7 @@ const Header = () => {
       <ul tabIndex={0} className="flex items-center p-2 gap-x-8">
         <li><Link to="/"><a>Home</a></Link></li>
         <li><Link to="/destinations"><a>Destinations</a></Link></li>
-        <li><Link to="/gallery"></Link><a>Gallery</a></li>
+        <li><Link to="/gallery"><a>Gallery</a></Link></li>
         <li><Link to="/about"><a>About us</a></Link></li>
         <li><Link to="/contacts"><a>Contact us</a></Link></li>
       </ul>
